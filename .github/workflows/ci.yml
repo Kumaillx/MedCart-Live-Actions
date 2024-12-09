@@ -1,0 +1,41 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Run tests (if applicable)
+      - name: Run tests
+        run: npm test
+
+      # Build the project
+      - name: Build
+        run: npm run build
+
+      # Deploy to hosting (e.g., GitHub Pages or a cloud platform)
+      - name: Deploy
+        run: |
+          echo "Your deployment script here"
