@@ -1,0 +1,276 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: black;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header .logo h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+header nav ul li {
+  margin: 0 1rem;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, black, #072f85);
+  color: #fff;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero button {
+  background: rgb(47, 225, 47);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.hero button:hover {
+  background: #e64a19;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #fff;
+  margin: 1rem 0;
+}
+.section:nth-child(even) {
+  background-color: #f4f4f4;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+/* .service {
+  background: #078509;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+.service h3 {
+  font-size: 1.5rem;
+} */
+
+/* Contact Form */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+form input, form textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+form button {
+  background: #11ee0d;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form button:hover {
+  background: #11ee0d;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+.logo img {
+  height: 50px; /* Adjust the height to control the size */
+  width: auto; /* Maintain the aspect ratio */
+  margin: 0; /* Remove any extra margin */
+  padding: 5px; /* Adjust padding around the logo */
+  border: 4px solid #11ee0d; /* Optional border styling */
+  border-radius: 8px; /* Adjust the border's rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for a sleek look */
+}
+
+.ok img
+{
+  height: 200px; /* Adjust the height to control the size */
+  width: 200px; /* Maintain the aspect ratio */
+  margin: 0; /* Remove any extra margin */
+  padding: 5px; /* Adjust padding around the logo */
+  border-radius: 30px;
+
+}
+
+.Team-sec
+{
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #000000;
+  margin: 1rem 0;
+  color: #f4f4f4;
+}
+
+/* General Team Section Styling */
+.team-section {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.team-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+/* Team Container Styling */
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Makes it responsive */
+}
+
+/* Team Member Card */
+.team-member {
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 200px;
+  background-color: #072f85 black; /* Dark background for card */
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds depth */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.team-member:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Team Member Image */
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px; /* Rounded corners */
+  margin-bottom: 1rem;
+}
+
+/* Team Member Name */
+.team-member h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Team Member Role */
+.team-member p {
+  font-size: 0.9rem;
+  color: #ccc; /* Light gray text */
+}
+
+
+/* General Services Section Styling */
+.services-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #f8f9fa; /* Light background */
+}
+.services-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Service Container */
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 1.5rem;
+}
+
+/* Individual Service Styling */
+.service {
+  background-color: #28a745; /* Green background */
+  color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.service:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Service Images */
+.service img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s;
+}
+.service:hover img {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Service Titles */
+.service h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* Service Description */
+.service p {
+  font-size: 1rem;
+  color: #f1f1f1; /* Lighter text */
+}

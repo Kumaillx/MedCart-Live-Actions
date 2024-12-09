@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedCart - Your Online Medical Store</title>
+    <link rel="stylesheet" href="File.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/1.png"/>
+            <h1>MedCart</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to MedCart</h2>
+            <p>Your trusted partner in healthcare solutions.</p>
+            <button onclick="scrollToSection('services')">Explore Now</button>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>At MedCart, we are revolutionizing the way people access healthcare products and services. Founded with the mission to make healthcare more accessible, affordable, and efficient, MedCart serves as your trusted partner in health and well-being. Our platform offers a seamless shopping experience for a diverse range of medical supplies, wellness products, and prescription medications, all available from the comfort of your home.
+
+        <p>
+            We take pride in prioritizing customer satisfaction by ensuring product authenticity, fast delivery, and competitive pricing. Beyond being a marketplace, we aim to educate and empower individuals by providing resources for informed health decisions. Whether you're managing a chronic condition, looking for preventive care solutions, or simply exploring ways to maintain a healthy lifestyle, MedCart is here to support you at every step.
+        </p>
+            
+    </section>
+
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service">
+                <img src="Images/Medical Supplies.jpg" >
+                <h3>Medical Supplies</h3>
+                <p>Wide range of medical products to cater to your needs.</p>
+            </div>
+            <div class="service">
+                <img src="Images/Prescription Delivery.jpg">
+                <h3>Prescription Delivery</h3>
+                <p>Fast and reliable delivery of your medications.</p>
+            </div>
+            <div class="service">
+                <img src="Images/MedAi.jpg">
+                <h3>Health Advice</h3>
+                <p>Connect with experts for personalized health advice.</p>
+            </div>
+            <div class="service">
+                <img src="Images/Subscription.png">
+                <h3>Subscription Service</h3>
+                <p>Avail our Subscription to track your health</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section id="team" class="team-section">
+        <h2>Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="Images/Abid.jpg" alt="Team Member 1">
+                <h3>Abid Ali Arshad</h3>
+                <p>C.E.O</p>
+                
+            </div>
+            <div class="team-member">
+                <img src="Images/Hamza.jpg" alt="Team Member 2">
+                <h3>Hamza Azeem</h3>
+                <p>Co-Founder</p>
+                
+            </div>
+            <div class="team-member">
+                <img src="Images/Me2.jpg" alt="Team Member 3">
+                <h3>Kumail Ali</h3>
+                <p>Marketing Director</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MedCart. All Rights Reserved.</p>
+    </footer>
+
+    <script src="File.js"></script>
+</body>
+</html>
